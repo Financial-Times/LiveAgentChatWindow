@@ -72,8 +72,6 @@ body {
     .liveAgentChatLog span.operator span.name, .liveAgentChatLog span.client span.name {
       font-family: MetricWeb, sans-serif;
       color: #4e96eb; }
-      .liveAgentChatLog span.operator span.name strong, .liveAgentChatLog span.client span.name strong {
-        font-weight: normal !important; }
   .liveAgentChatLog span.operator {
     background-color: #ffffff; }
   .liveAgentChatLog span.client {

@@ -104,9 +104,6 @@ $loading-spinner-framerate: .7s;
       font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
       color: oColorsGetPaletteColor("org-b2c");
       
-      strong {
-        font-weight: normal !important;  
-      }
     }
   }
 
