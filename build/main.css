@@ -1,0 +1,106 @@
+@font-face {
+  src: url("//origami-build.ft.com/v2/files/o-fonts-assets@1.3.0/MetricWeb-Semibold.woff?#iefix") format("woff");
+  font-family: MetricWeb;
+  font-weight: 600;
+  font-style: normal; }
+
+body {
+  background-color: #fff1e0;
+  margin: 0;
+  padding: 0; }
+
+.header-logo {
+  height: 66px;
+  background-image: url("images/ft-logo.png");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.header-brand {
+  background-color: #4e96eb;
+  font-family: MetricWeb, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 42px;
+  padding-left: 18px; }
+
+.liveAgentMessage {
+  font-family: georgia;
+  color: #333333;
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 20px;
+  padding-left: 18px; }
+  .liveAgentMessage strong {
+    font-family: MetricWeb, sans-serif; }
+
+.loading-spinner {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 40px auto 0 auto;
+  background-image: url("images/loading_spinner.png");
+  -webkit-animation: play 0.7s steps(8) infinite;
+  animation: play 0.7s steps(8) infinite; }
+
+@-webkit-keyframes play {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -800px; } }
+
+@keyframes play {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -800px; } }
+
+.liveAgentChatLog {
+  overflow-y: auto;
+  height: 330px;
+  margin: 0 0 0 20px;
+  border-bottom: solid 1px #979797; }
+  .liveAgentChatLog span.operator, .liveAgentChatLog span.client {
+    display: block;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Georgia;
+    color: #333333;
+    font-size: 18px;
+    line-height: 25px;
+    clear: both; }
+    .liveAgentChatLog span.operator span.name, .liveAgentChatLog span.client span.name {
+      font-family: MetricWeb, sans-serif;
+      color: #4e96eb; }
+      .liveAgentChatLog span.operator span.name strong, .liveAgentChatLog span.client span.name strong {
+        font-weight: normal !important; }
+  .liveAgentChatLog span.operator {
+    background-color: #ffffff; }
+  .liveAgentChatLog span.client {
+    background-color: #e9decf; }
+  .liveAgentChatLog span.system {
+    font-family: MetricWeb, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #333333; }
+
+.liveAgentChatInput {
+  margin-top: 10px; }
+  .liveAgentChatInput .liveAgentChatInputTextarea {
+    padding-left: 20px; }
+  .liveAgentChatInput .liveAgentChatInputButtons {
+    padding-left: 10px; }
+  .liveAgentChatInput .o-forms-group {
+    padding: 0; }
+    .liveAgentChatInput .o-forms-group textarea {
+      height: 100px; }
+  .liveAgentChatInput .o-buttons {
+    background-color: #4e96eb;
+    border-color: #4e96eb;
+    color: #ffffff;
+    margin-bottom: 5px; }
+  .liveAgentChatInput .o-buttons--uncolored {
+    background-color: #fff1e0;
+    color: #4e96eb; }
+
+/*# sourceMappingURL=main.css.map */

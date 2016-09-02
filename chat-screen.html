@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="//origami-build.ft.com/v2/bundles/css?modules=o-buttons@4.0.2,o-fonts@^1.4.0,o-forms@^2.0.5,o-grid@^4.2.2">
+  <link rel="stylesheet" type="text/css" href="build/main.css">
+</head>
+<body>
+
+  <div class="header-logo"></div>
+  <div class="header-brand">Financial Times Customer Service</div>
+
+  <div class="liveAgentChatLog" id="liveAgentChatLog">
+      <div id="liveAgentChatLogText"><span class="operator"><span class="name"><strong>Carmelita C:</strong> </span><span class="messageText">Thank you for contacting FT Customer Service.<br>Please note that this chat will be recorded for quality, monitoring and training purposes.<br>For security reasons please do not send your full credit card details over this chat.<br>How may I help you today?</span></span><span class="operator"><span class="name"><strong>Carmelita C:</strong> </span><span class="messageText">How may I help you today?</span></span><span class="client"><span class="name"><strong>Me:</strong> </span><span class="messageText">Hi don't mind me just working on the new style for the chat window <br></span></span><span class="operator"><span class="name"><strong>Carmelita C:</strong> </span><span class="messageText">Sure. No worries.</span></span><span class="operator"><span class="name"><strong>Carmelita C:</strong> </span><span class="messageText">Do I need to have this chat conversation active?</span></span><span class="client"><span class="name"><strong>Me:</strong> </span><span class="messageText">nope you can de-activate it if you want <br></span></span><span class="operator"><span class="name"><strong>Carmelita C:</strong> </span><span class="messageText">Thank you for contacting Financial Times. Have a great day!</span></span><span class="system"><em>The agent has ended the chat.</em></span></div>
+      <span class="operator" id="liveAgentChatLogTyping" style="display: none;"></span>
+  </div>
+
+  <div id="chatInput" class="liveAgentChatInput o-grid-container">
+    <div class="o-grid-row">
+      <div data-o-grid-colspan="10" class="liveAgentChatInputTextarea">
+        <div class="o-forms-group">
+          <textarea placeholder="placeholder" class="o-forms-textarea" id="disabledChatInput"></textarea>
+        </div>
+      </div>
+      <div data-o-grid-colspan="2" class="liveAgentChatInputButtons">
+        <button class="o-buttons o-buttons--big" id="sendButton" type="button">Send</button>
+        <button class="o-buttons o-buttons--big o-buttons--uncolored" id="button_save1" type="button">Save chat</button>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div id="chatInput" class="liveAgentChatInput o-grid-container">
+    <div class="o-grid-row">
+      <div data-o-grid-colspan="10" class="liveAgentChatInputTextarea">
+        <div class="o-forms-group">
+          <textarea placeholder="placeholder" class="o-forms-textarea" id="disabledChatInput" disabled></textarea>
+        </div>
+      </div>
+      <div data-o-grid-colspan="2" class="liveAgentChatInputButtons">
+        <button class="o-buttons o-buttons--big" id="sendButton" type="button" disabled>Send</button>
+        <button class="o-buttons o-buttons--big o-buttons--uncolored" id="button_save1" type="button">Save chat</button>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

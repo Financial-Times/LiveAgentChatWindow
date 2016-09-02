@@ -1,0 +1,26 @@
+{
+  "name": "fthelp-live-agent-chat",
+  "description": "",
+  "main": "main.scss",
+  "authors": [
+    "Laurent Muchacho <laurent.muchacho@ft.com>"
+  ],
+  "homepage": "https://github.com/Financial-Times/fthelp-live-agent-chat",
+  "moduleType": [
+    "globals"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "o-buttons": "^4.0.2",
+    "o-colors": "^3.5.0",
+    "o-typography": "^4.3.1"
+
+  }
+}
