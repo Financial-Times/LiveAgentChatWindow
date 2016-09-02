@@ -11,7 +11,6 @@ body {
 
 .header-logo {
   height: 66px;
-  background-image: url("images/ft-logo.png");
   background-position: center;
   background-repeat: no-repeat; }
 
@@ -38,7 +37,6 @@ body {
   height: 100px;
   display: block;
   margin: 40px auto 0 auto;
-  background-image: url("images/loading_spinner.png");
   -webkit-animation: play 0.7s steps(8) infinite;
   animation: play 0.7s steps(8) infinite; }
 
