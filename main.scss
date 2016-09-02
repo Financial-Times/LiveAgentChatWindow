@@ -1,0 +1,161 @@
+
+$o-colors-is-silent: true;
+@import 'o-colors/main';
+
+$o-fonts-is-silent: true;
+@import 'o-fonts/main';
+
+@include oFontsInclude(MetricWeb, semibold);
+
+body {
+  background-color: oColorsGetPaletteColor("pink");
+  margin: 0;
+  padding: 0;
+}
+
+.header-logo {
+  height: 66px;
+  background-image: url("images/ft-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-brand {
+  background-color: oColorsGetPaletteColor("org-b2c");
+  font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+  color: oColorsGetPaletteColor("white");
+  font-size: 18px;
+  line-height: 42px;
+  padding-left: 18px;
+}
+
+.liveAgentMessage {
+  font-family: georgia;
+  color: oColorsGetPaletteColor("grey-tint5");
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 20px;  
+  padding-left: 18px;
+
+  strong {
+    font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+
+  }
+}
+
+$loading-spinner-framerate: .7s;
+.loading-spinner  {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin:40px auto 0 auto;
+  background-image: url("images/loading_spinner.png");
+
+  -webkit-animation: play $loading-spinner-framerate steps(8) infinite;
+     -moz-animation: play $loading-spinner-framerate steps(8) infinite;
+      -ms-animation: play $loading-spinner-framerate steps(8) infinite;
+       -o-animation: play $loading-spinner-framerate steps(8) infinite;
+          animation: play $loading-spinner-framerate steps(8) infinite;
+
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+.liveAgentChatLog {
+  overflow-y:auto;
+  height: 330px;
+  margin: 0 0 0 20px;
+  border-bottom: solid 1px #979797;
+
+  span.operator, span.client {
+    display: block;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Georgia;
+    color: oColorsGetPaletteColor("grey-tint5");
+    font-size: 18px;
+    line-height: 25px;
+    clear: both;
+    span.name {
+      font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+      color: oColorsGetPaletteColor("org-b2c");
+      
+      strong {
+        font-weight: normal !important;  
+      }
+    }
+  }
+
+  span.operator {
+    background-color: oColorsGetPaletteColor("white")
+
+  }
+  span.client {
+    background-color: oColorsGetPaletteColor("pink-tint2")
+  }
+
+  span.system {
+    font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+    font-style: italic;
+    font-size: 18px;
+    color: oColorsGetPaletteColor("grey-tint5");
+  }
+
+}
+
+.liveAgentChatInput {
+  margin-top: 10px;
+
+  .liveAgentChatInputTextarea {
+    padding-left: 20px;
+  }
+  .liveAgentChatInputButtons  {
+    padding-left: 10px;
+  }
+
+  .o-forms-group {
+    padding: 0;
+    textarea {
+      height:100px;
+    }
+  }
+
+  .o-buttons {
+    background-color: oColorsGetPaletteColor("org-b2c");
+    border-color: oColorsGetPaletteColor("org-b2c");
+    color: oColorsGetPaletteColor("white");
+    margin-bottom: 5px;
+  }
+
+  .o-buttons--uncolored {
+    background-color: oColorsGetPaletteColor("pink");
+    color: oColorsGetPaletteColor("org-b2c");
+  }
+
+}
+
+
