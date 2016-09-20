@@ -52,12 +52,13 @@ body {
   to {
     background-position: -800px; } }
 
-.liveAgentChatLog {
+#liveAgentChatLog {
   overflow-y: auto;
   height: 330px;
   margin: 0 0 0 20px;
+  border: 0;
   border-bottom: solid 1px #979797; }
-  .liveAgentChatLog span.operator, .liveAgentChatLog span.client {
+  #liveAgentChatLog span.operator, #liveAgentChatLog span.client {
     display: block;
     margin: 0 10px 10px 0;
     padding: 10px;
@@ -67,35 +68,35 @@ body {
     font-size: 18px;
     line-height: 25px;
     clear: both; }
-    .liveAgentChatLog span.operator span.name, .liveAgentChatLog span.client span.name {
+    #liveAgentChatLog span.operator span.name, #liveAgentChatLog span.client span.name {
       font-family: MetricWeb, sans-serif;
       color: #4e96eb; }
-  .liveAgentChatLog span.operator {
+  #liveAgentChatLog span.operator {
     background-color: #ffffff; }
-  .liveAgentChatLog span.client {
+  #liveAgentChatLog span.client {
     background-color: #e9decf; }
-  .liveAgentChatLog span.system {
+  #liveAgentChatLog span.system {
     font-family: MetricWeb, sans-serif;
     font-style: italic;
     font-size: 18px;
     color: #333333; }
 
-.liveAgentChatInput {
+.liveAgentChatInputContainer {
   margin-top: 10px; }
-  .liveAgentChatInput .liveAgentChatInputTextarea {
+  .liveAgentChatInputContainer .liveAgentChatInputTextarea {
     padding-left: 20px; }
-  .liveAgentChatInput .liveAgentChatInputButtons {
+  .liveAgentChatInputContainer .liveAgentChatInputButtons {
     padding-left: 10px; }
-  .liveAgentChatInput .o-forms-group {
+  .liveAgentChatInputContainer .o-forms-group {
     padding: 0; }
-    .liveAgentChatInput .o-forms-group textarea {
+    .liveAgentChatInputContainer .o-forms-group textarea {
       height: 100px; }
-  .liveAgentChatInput .o-buttons {
+  .liveAgentChatInputContainer .o-buttons {
     background-color: #4e96eb;
     border-color: #4e96eb;
     color: #ffffff;
     margin-bottom: 5px; }
-  .liveAgentChatInput .o-buttons--uncolored {
+  .liveAgentChatInputContainer .o-buttons--uncolored {
     background-color: #fff1e0;
     color: #4e96eb; }
 
