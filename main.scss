@@ -81,7 +81,7 @@ $loading-spinner-framerate: .7s;
   to { background-position: -800px; }
 }
 
-.liveAgentChatLog {
+#liveAgentChatLog {
   overflow-y:auto;
   height: 300px;
   margin: 0 0 0 20px;
@@ -155,6 +155,13 @@ $loading-spinner-framerate: .7s;
     background-color: oColorsGetPaletteColor("pink");
     color: oColorsGetPaletteColor("org-b2c");
     width: 49%;
+  }
+
+  .o-buttons {
+    @media (min-width: 740px) {
+      width: auto;
+      margin-top: 10px;
+    }
   }
 
 }
