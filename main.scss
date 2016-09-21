@@ -27,6 +27,20 @@ body {
   padding-left: 18px;
 }
 
+.liveAgentMessage {
+  font-family: georgia;
+  color: oColorsGetPaletteColor("grey-tint5");
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 20px;
+  padding-left: 18px;
+
+  strong {
+    font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+
+  }
+}
+
 $loading-spinner-framerate: .7s;
 .loading-spinner  {
   width: 100px;
@@ -39,6 +53,7 @@ $loading-spinner-framerate: .7s;
   -ms-animation: play $loading-spinner-framerate steps(8) infinite;
   -o-animation: play $loading-spinner-framerate steps(8) infinite;
   animation: play $loading-spinner-framerate steps(8) infinite;
+
 }
 
 @-webkit-keyframes play {
@@ -66,88 +81,74 @@ $loading-spinner-framerate: .7s;
   to { background-position: -800px; }
 }
 
-
-.chat {
+.liveAgentChatLog {
   overflow-y:auto;
   height: 300px;
+  margin: 0 0 0 20px;
   border-bottom: solid 1px #979797;
-}
-.chat__message {
-  position: relative;
-  font-family: Georgia;
-  font-size: 18px;
-  text-align: justify;
-  border-radius: 4px;
-  width: 98%;
-  margin: 10px auto;
-  min-height: 36px;
-}
 
-.chat__message--operator {
-  background-color: #fff;
-  &:after {
-    border-color: transparent #fff;
+  span.operator, span.client {
+    display: block;
+    position: relative;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Georgia;
+    color: oColorsGetPaletteColor("grey-tint5");
+    font-size: 18px;
+    line-height: 25px;
+    clear: both;
+    span.name {
+      font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+      color: oColorsGetPaletteColor("org-b2c");
+
+    }
   }
-}
 
-.chat__message--client {
-  background-color: oColorsGetPaletteColor("pink-tint2");
-  &:after {
-    border-color: transparent oColorsGetPaletteColor("pink-tint2");
+  span.operator {
+    background-color: oColorsGetPaletteColor("white")
+
   }
+  span.client {
+    background-color: oColorsGetPaletteColor("pink-tint2")
+  }
+
+  span.system {
+    font-family: oFontsGetFontFamilyWithFallbacks(MetricWeb);
+    font-style: italic;
+    font-size: 18px;
+    color: oColorsGetPaletteColor("grey-tint5");
+  }
+
 }
 
-.chat__message:after {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 6px 15px 6px 0;
-  display: block;
-  width: 0;
-  z-index: 1;
-  left: -15px;
-  top: 5px;
-  clear: both;
-}
-
-.chat__message__item {
-  display: inline-block;
-  margin: 10px;
-}
-
-.chat__message__item:after {
-  content: ".";
-  clear: both;
-  display: block;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-.o-forms-group {
-  margin-bottom: 0;
-}
-
-.chat-input {
+.liveAgentChatInput {
   margin-top: 10px;
-  textarea {
-    border: 0;
-  }
-}
 
-.chat-controls {
-  margin-top: 10px;
-  button {
+  .liveAgentChatInputTextarea {
+    padding-left: 20px;
+  }
+  .liveAgentChatInputButtons  {
+    padding-left: 10px;
+  }
+
+  .o-forms-group {
+    padding: 0;
+    textarea {
+      height:100px;
+    }
+  }
+
+  .o-buttons {
+    background-color: oColorsGetPaletteColor("org-b2c");
     border-color: oColorsGetPaletteColor("org-b2c");
+    color: oColorsGetPaletteColor("white");
+    margin-bottom: 5px;
   }
-}
 
-.chat-controls--send {
-  background-color: oColorsGetPaletteColor("org-b2c");
-  color: oColorsGetPaletteColor("white");
-}
+  .o-buttons--uncolored {
+    background-color: oColorsGetPaletteColor("pink");
+    color: oColorsGetPaletteColor("org-b2c");
+  }
 
-.chat-controls--save {
-  background-color: oColorsGetPaletteColor("pink");
-  color: oColorsGetPaletteColor("org-b2c");
 }
