@@ -123,3 +123,31 @@ $loading-spinner-framerate: .7s;
   line-height: 0;
   height: 0;
 }
+
+.o-forms-group {
+  margin-bottom: 0;
+}
+
+.chat-input {
+  margin-top: 10px;
+  textarea {
+    border: 0;
+  }
+}
+
+.chat-controls {
+  margin-top: 10px;
+  button {
+    border-color: oColorsGetPaletteColor("org-b2c");
+  }
+}
+
+.chat-controls--send {
+  background-color: oColorsGetPaletteColor("org-b2c");
+  color: oColorsGetPaletteColor("white");
+}
+
+.chat-controls--save {
+  background-color: oColorsGetPaletteColor("pink");
+  color: oColorsGetPaletteColor("org-b2c");
+}

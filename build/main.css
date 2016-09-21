@@ -91,4 +91,25 @@ body {
   line-height: 0;
   height: 0; }
 
+.o-forms-group {
+  margin-bottom: 0; }
+
+.chat-input {
+  margin-top: 10px; }
+  .chat-input textarea {
+    border: 0; }
+
+.chat-controls {
+  margin-top: 10px; }
+  .chat-controls button {
+    border-color: #4e96eb; }
+
+.chat-controls--send {
+  background-color: #4e96eb;
+  color: #ffffff; }
+
+.chat-controls--save {
+  background-color: #fff1e0;
+  color: #4e96eb; }
+
 /*# sourceMappingURL=main.css.map */
