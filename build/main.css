@@ -54,7 +54,7 @@ body {
 
 .liveAgentChatLog {
   overflow-y: auto;
-  height: 330px;
+  height: 300px;
   margin: 0 0 0 20px;
   border-bottom: solid 1px #979797; }
   .liveAgentChatLog span.operator, .liveAgentChatLog span.client {
@@ -81,23 +81,29 @@ body {
     font-size: 18px;
     color: #333333; }
 
-.liveAgentChatInput {
+.liveAgentChatInputContainer {
   margin-top: 10px; }
-  .liveAgentChatInput .liveAgentChatInputTextarea {
+  .liveAgentChatInputContainer .liveAgentChatInputTextarea {
     padding-left: 20px; }
-  .liveAgentChatInput .liveAgentChatInputButtons {
-    padding-left: 10px; }
-  .liveAgentChatInput .o-forms-group {
-    padding: 0; }
-    .liveAgentChatInput .o-forms-group textarea {
+  .liveAgentChatInputContainer .liveAgentChatInputButtons {
+    margin-top: 10px;
+    padding-left: 20px; }
+  .liveAgentChatInputContainer .o-forms-group {
+    padding: 0;
+    margin: 0; }
+    .liveAgentChatInputContainer .o-forms-group textarea {
+      border: 0;
+      padding: 0;
+      margin: 0;
       height: 100px; }
-  .liveAgentChatInput .o-buttons {
+  .liveAgentChatInputContainer .o-buttons {
     background-color: #4e96eb;
     border-color: #4e96eb;
     color: #ffffff;
-    margin-bottom: 5px; }
-  .liveAgentChatInput .o-buttons--uncolored {
+    width: 49%; }
+  .liveAgentChatInputContainer .o-buttons--uncolored {
     background-color: #fff1e0;
-    color: #4e96eb; }
+    color: #4e96eb;
+    width: 49%; }
 
 /*# sourceMappingURL=main.css.map */
